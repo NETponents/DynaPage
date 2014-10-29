@@ -25,18 +25,11 @@ echo '<br /><br />';
 //start posts
 //initialize connection
 mysql_select_db($db_database) or die("Something went wrong. Check that you set up your database correctly and you provided the correct name in login.php. For the developers: " . mysql.error());
-$query = "SELECT * FROM posts";
+$query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
 $result = mysql_query($query);
 if (!$result) die("No posts found.");
-if (mysql_num_rows($result) <= $cf_hp_visposts)
-{
-  $rows = mysql_num_rows($result);
-}
-else
-{
-  $rows = $cf_hp_visposts;
-}
-for ($j = 0 ; $j < $rows ; ++$j)
+$rows = mysql_num_rows($result);
+for ($j = $rows ; $j > 0 ; --$j)
 {
   echo '<h3>' . mysql_result($result,$j,'title') . '</h3><br />';
   echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5><br />';
