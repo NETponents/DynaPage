@@ -1,6 +1,8 @@
 <?php
 //required files
-require_once 'login.php'
+require_once 'login.php';
+require_once 'settings.php';
+require_once 'styles.php';
 
 //setup mySQL connection
 $db_server = mysql_connect($db_hostname, $db_username, $db_password);
