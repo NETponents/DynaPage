@@ -17,8 +17,8 @@ echo '</header>';
 
 //start body
 echo '<body>';
-echo "<h1>" . $cf_title . "</h1><br />";
-echo "<h2>" . $cf_caption . "</h2><br />";
+echo "<h1>" . $cf_title . "</h1>";
+echo "<h2>" . $cf_caption . "</h2>";
 echo '<hr />';
 echo '<br /><br />';
 
@@ -31,14 +31,14 @@ if (!$result) die("No posts found.");
 $rows = mysql_num_rows($result);
 for ($j = $rows ; $j > -1 ; --$j)
 {
-  echo '<h3>' . mysql_result($result,$j,'title') . '</h3><br />';
-  echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5><br />';
-  echo '<p>' . mysql_result($result,$j,'content') . '</p><br /><br />';
+  echo '<h3>' . mysql_result($result,$j,'title') . '</h3>';
+  echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5>';
+  echo '<p>' . mysql_result($result,$j,'content') . '</p><br />';
 }
 
 //begin footer of visible page
 echo '<hr />';
-echo $cf_legal . '<br /><br />';
+echo $cf_legal . '<br />';
 echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>';
 
 //end body
