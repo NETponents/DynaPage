@@ -29,7 +29,7 @@ $query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
 $result = mysql_query($query);
 if (!$result) die("No posts found.");
 $rows = mysql_num_rows($result);
-for ($j = $rows ; $j => 0 ; --$j)
+for ($j = $rows ; $j > -1 ; --$j)
 {
   echo '<h3>' . mysql_result($result,$j,'title') . '</h3><br />';
   echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5><br />';
