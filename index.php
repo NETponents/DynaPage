@@ -38,6 +38,7 @@ else
 for ($j = 0 ; $j < $rows ; ++$j)
 {
   echo '<h3>' . mysql_result($result,$j,'title') . '</h3><br />';
+  echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5><br />';
   echo '<p>' . mysql_result($result,$j,'content') . '</p><br /><br />';
 }
 
