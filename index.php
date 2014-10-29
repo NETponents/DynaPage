@@ -1,6 +1,6 @@
 <?php
 //required files
-require_once 'login.php';
+require_once 'sqldata.php';
 require_once 'settings.php';
 require_once 'styles.php';
 
