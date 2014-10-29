@@ -11,7 +11,7 @@ if(!$db_server) die("Something went wrong. Check your installation of mySQL and 
 //start HTML headers
 echo '<html>';
 echo '<header>';
-echo '<LINK href=\"' . $cf_theme . '\" rel="stylesheet" type="text/css">';
+echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
 //add any header information you need such as Google Analytics tracking
 echo '</header>';
 
