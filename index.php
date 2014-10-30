@@ -16,7 +16,14 @@ echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
 echo '</header>';
 
 //start body
-echo '<body>';
+if(!$st_bodyimage)
+{
+  echo '<body>';
+}
+else
+{
+  echo '<body style=\"background-image:url(' . $st_bodyimage . ')\">';
+}
 echo "<h1>" . $cf_title . "</h1>";
 echo "<h2>" . $cf_caption . "</h2>";
 echo '<hr />';
