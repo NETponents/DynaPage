@@ -24,10 +24,18 @@ else
 {
   echo '<body style=\"background-image:url(' . $st_bodyimage . ')\">';
 }
-echo "<h1>" . $cf_title . "</h1>";
-echo "<h2>" . $cf_caption . "</h2>";
-echo '<hr />';
-echo '<br /><br />';
+if(!$st_headerimage)
+{
+  echo "<h1>" . $cf_title . "</h1>";
+  echo "<h2>" . $cf_caption . "</h2>";
+  echo '<hr />';
+  echo '<br /><br />';
+}
+else
+{
+  //TODO: finish call to create header image from media source listed in settings.php
+  //echo "<img src=\"" . $st_headerimage . ""\" alt="Mountain View" style="width:304px;height:228px">"
+}
 
 //start posts
 //initialize connection
