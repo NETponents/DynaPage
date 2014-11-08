@@ -36,10 +36,21 @@ echo "<h1>" . $cf_title . "</h1>";
 echo "<h2>" . $cf_caption . "</h2>";
 echo '<hr />';
 echo '<br /><br />';
-
 //start admin content
-
+echo "<table>";
+//$ar_addons = ;//file lookup in folder method
+/*
+for (string i in $ar_addons)
+{
+  echo "<tr>";
+  require i;
+  i.run();
+  echo "</tr>";
+}
+*/
+echo "</table>";
 //end admin content
+*/
 echo '<hr />';
 echo $cf_legal . '<br />';
 echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>';
