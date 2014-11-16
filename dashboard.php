@@ -38,16 +38,11 @@ echo '<hr />';
 echo '<br /><br />';
 //start admin content
 echo "<table>";
-//$ar_addons = ;//file lookup in folder method
-/*
-for (string i in $ar_addons)
-{
-  echo "<tr>";
-  require i;
-  i.run();
-  echo "</tr>";
+$dir = "/admin/modules";
+$dh  = opendir($dir);
+while (false !== ($filename = readdir($dh))) {
+    echo "<iframe href=\"" . $filename . "\" />";
 }
-*/
 echo "</table>";
 //end admin content
 */
