@@ -1,17 +1,13 @@
 <?php
-require_once auth.php;
+require_once cklogin.php;
 require_once styles.php;
 require_once settings.php;
 require_once sqldata.php;
-if($isloggedin())
+if(isloggedin() != 0)
 {
   echo "<html><body>FORBIDDEN</body></html>";
 }
-else if($isadmin())
-{
-  echo "<html><body>FORBIDDEN</body></html>";
-}
-else if($canaccesswebconsole())
+else if(accessLevel() < $sc_adminPanel)
 {
   echo "<html><body>FORBIDDEN</body></html>";
 }
@@ -41,7 +37,7 @@ echo "<table>";
 $dir = "/admin/modules";
 $dh  = opendir($dir);
 while (false !== ($filename = readdir($dh))) {
-    echo "<iframe href=\"" . $filename . "\" />";
+    echo "<iframe src=\"" . $filename . "\"></iframe>";
 }
 echo "</table>";
 //end admin content
