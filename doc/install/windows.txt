@@ -1,0 +1,7 @@
+Welcome to DynaPage! This document will walk you through installing your webpage on your Windows computer.
+1. Obtain a web hosting program. It must support PHP. On Windows Server we recommend IIS. On regular editions of Windows, we recommend XAMPP.
+2. Find your wwwroot folder. Read documentation if you cannot find it.
+3. Copy entire contents of DynaPage to the wwwroot of your server. IT MUST BE AT THE ROOT OF THE FOLDER.
+4. Open your web browser and go to "http://localhost" without the quotes.
+5. If you see an error about SQL, it works. If you see code and random white boxes you did not install PHP correctly. See the troubleshooting page on the DynaPage wiki.
+6. You are now ready to move on to the next step of the setup. Open the /doc/setup/settings.txt file to learn how to customize your installation of DynaPage.
