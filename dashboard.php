@@ -3,7 +3,7 @@ require 'cklogin.php';
 require 'styles.php';
 require 'settings.php';
 require 'sqldata.php';
-if(isloggedin() != 0)
+if(isloggedin() != 1)
 {
   echo "<html><body>FORBIDDEN</body></html>";
 }
