@@ -1,6 +1,0 @@
-To set up your SQL tables, follow the instructions below.
-1. Log into your mySQL administration tool. Instructions for this will vary depending on the tool. You should be presented with a command line prompt.
-2. Select your database. This can be done through a graphical tool or issuing "SELECT database", removing the quotes and replacing database with the name of your database.
-3. Type in "CREATE TABLE users" without quotes
-4. Type in "CREATE TABLE posts" without quotes
-5. You should be all set. Go ahead to your site and browse around. If you get errors, you did something wrong. If you get an error on the home page, you set up your posts table wrong. If you cannot sign in or create a new user, you set up your users table wrong. See the TROUBLESHOOTING section on this projects wiki at http://github.com/ARMmaster17/DynaPage/wiki
