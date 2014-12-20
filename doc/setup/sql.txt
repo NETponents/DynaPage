@@ -1,0 +1,1 @@
+Please set up your MySQL database as shown:
