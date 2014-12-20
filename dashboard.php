@@ -18,7 +18,6 @@ echo "<html><head>";
 echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
 //This is the place to add google analytics code
 //echo
-
 echo "</header><body>";
 if(!$st_bodyimage)
 {
@@ -33,15 +32,15 @@ echo "<h2>" . $cf_caption . "</h2>";
 echo '<hr />';
 echo '<br /><br />';
 //start admin content
-echo "<table>";
+echo "<table border=\"1\" style=\"width:100%\">";
 $dir = "/admin/modules";
 $dh  = opendir($dir);
-while (false !== ($filename = readdir($dh))) {
-    echo "<iframe src=\"" . $filename . "\"></iframe>";
+while (false !== ($filename = readdir($dh)))
+{
+    echo "<tr><td><iframe src=\"" . $filename . "\"></iframe></td></tr>";
 }
 echo "</table>";
 //end admin content
-*/
 echo '<hr />';
 echo $cf_legal . '<br />';
 echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>';
