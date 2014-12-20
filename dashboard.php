@@ -1,8 +1,8 @@
 <?php
-require_once 'cklogin.php';
-require_once 'styles.php';
-require_once 'settings.php';
-require_once 'sqldata.php';
+require 'cklogin.php';
+require 'styles.php';
+require 'settings.php';
+require 'sqldata.php';
 if(isloggedin() != 0)
 {
   echo "<html><body>FORBIDDEN</body></html>";
