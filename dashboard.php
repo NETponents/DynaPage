@@ -37,7 +37,7 @@ $dir = "/admin/modules";
 $dh  = opendir($dir);
 while (false !== ($filename = readdir($dh)))
 {
-    echo "<tr><td><iframe src=\"" . $filename . "\"></iframe></td></tr>";
+    echo "<tr><td><iframe src=\"" . $dir . $filename . "\"></iframe></td></tr>";
 }
 echo "</table>";
 //end admin content
