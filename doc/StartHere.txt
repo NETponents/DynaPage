@@ -1,0 +1,5 @@
+Welcome to DynaPage! To get started, follow the direction below:
++ Windows (any version): /doc/install/windows.txt
++ Linux (any version): /doc/install/linux.txt
++ Mac (any version): /doc/install/mac.txt
++ Cluster (Windows/Linux with Hadoop): /doc/install/special/start/txt
