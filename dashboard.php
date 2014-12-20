@@ -39,10 +39,21 @@ $dir = $cf_rooturl . "/admin/modules/";
 $dh  = opendir($dir);
 while (false !== ($filename = readdir($dh)))
 {
-    //echo "<tr><td><iframe src=\"" . $dir . $filename . "\"></iframe></td></tr>";
-    echo "<tr><td>";
-    include $dir . $filename;
-    echo "</td></tr>";
+    if($filename == ".")
+    {
+      //do nothing, this is a linux folder pointer and will cause an error
+    }
+    else if($filename == "..")
+    {
+      //do nothing, this is a linux folder pointer and will cause an error
+    }
+    else
+    {
+      //echo "<tr><td><iframe src=\"" . $dir . $filename . "\"></iframe></td></tr>";
+      echo "<tr><td>";
+      include $dir . $filename;
+      echo "</td></tr>";
+    }
 }
 echo "</table>";
 //end admin content
