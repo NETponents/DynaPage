@@ -3,16 +3,18 @@ require 'cklogin.php';
 require 'styles.php';
 require 'settings.php';
 require 'sqldata.php';
-if(isloggedin() != 1)
-{
-  echo "<html><body>FORBIDDEN</body></html>";
-}
-else if(accessLevel() < $sc_adminPanel)
-{
-  echo "<html><body>FORBIDDEN</body></html>";
-}
-else
-{
+
+//Blocked out for dev purposes. Uncomment when login branch is merged
+//if(isloggedin() != 0)
+//{
+//  echo "<html><body>FORBIDDEN</body></html>";
+//}
+//else if(accessLevel() < $sc_adminPanel)
+//{
+//  echo "<html><body>FORBIDDEN</body></html>";
+//}
+//else
+//{
 //start loading page
 echo "<html><head>";
 echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
@@ -45,5 +47,5 @@ echo '<hr />';
 echo $cf_legal . '<br />';
 echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>';
 echo "</body></html>";
-}
+//}
 ?>
