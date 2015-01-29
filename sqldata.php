@@ -3,5 +3,5 @@
 $db_hostname = 'nv8sklzebb.database.windows.net:1433';
 $db_database = 'roamingrambo_db';
 $db_username = 'zennjos';
-$db_password = 'Astory345';
+$db_password = '@story345';
 ?>
