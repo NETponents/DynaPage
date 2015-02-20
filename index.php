@@ -58,12 +58,20 @@ $result = $stmt->fetchAll(PDO::FETCH_NUM);
 //$query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
 //$result = mysql_query($query);
 if (!$result) die("No posts found.");
-$rows = mysql_num_rows($result);
+//$rows = mysql_num_rows($result);
+$rows = $cf_hp_visposts;
 for ($j = $rows ; $j > -1 ; --$j)
 {
-  echo '<h3>' . mysql_result($result,$j,'title') . '</h3>';
-  echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5>';
-  echo '<p>' . mysql_result($result,$j,'content') . '</p><br />';
+  try
+  {
+    echo '<h3>' . mysql_result($result,$j,'title') . '</h3>';
+    echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5>';
+    echo '<p>' . mysql_result($result,$j,'content') . '</p><br />';
+  }
+  catch
+  {
+    
+  }
 }
 
 //begin footer of visible page
