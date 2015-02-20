@@ -70,7 +70,7 @@ for ($j = $rows ; $j > -1 ; --$j)
   }
   catch
   {
-    
+    echo 'error';
   }
 }
 
