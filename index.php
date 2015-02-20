@@ -12,7 +12,7 @@ require_once 'styles.php';
 //Use this line if you are on Windows Azure or using Microsoft SQL
 $db_server = sqlsrv_connect($db_hostname, array("UID"=>$db_username, "PWD"=>$db_password, "Database"=>$db_database));
 
-if(!$db_server) die("Something went wrong. Check your installation of mySQL and the info you provided in login.php. For developers, here's what happened: " . mysql_error());
+if(!$db_server) die("Something went wrong. Check your installation of mySQL and the info you provided in sqldata.php. For developers, here's what happened: " . mysql_error());
 
 //start HTML headers
 echo '<html>';
@@ -45,9 +45,18 @@ else
 
 //start posts
 //initialize connection
-mysql_select_db($db_database) or die("Something went wrong. Check that you set up your database correctly and you provided the correct name in login.php. For the developers: " . mysql.error());
-$query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
-$result = mysql_query($query);
+
+//Uncomment this line if you are not using MS SQL
+//mysql_select_db($db_database) or die("Something went wrong. Check that you set up your database correctly and you provided the correct name in login.php. For the developers: " . mysql.error());
+
+//Use this line if you ARE on a varient of MS SQL
+$db_server = connect(); 
+$sql = "SELECT * FROM posts LIMIT " . $cf_hp_visposts; 
+$stmt = $db_server->query($sql); 
+$result = $stmt->fetchAll(PDO::FETCH_NUM); 
+
+//$query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
+//$result = mysql_query($query);
 if (!$result) die("No posts found.");
 $rows = mysql_num_rows($result);
 for ($j = $rows ; $j > -1 ; --$j)
