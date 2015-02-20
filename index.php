@@ -5,7 +5,13 @@ require_once 'settings.php';
 require_once 'styles.php';
 
 //setup mySQL connection
-$db_server = mysql_connect($db_hostname, $db_username, $db_password);
+
+//Use this line if you are using SQL on your own server
+//$db_server = mysql_connect($db_hostname, $db_username, $db_password);
+
+//Use this line if you are on Windows Azure or using Microsoft SQL
+$db_server = sqlsrv_connect($db_hostname, array("UID"=>$db_username, "PWD"=>$db_password, "Database"=>$db_database));
+
 if(!$db_server) die("Something went wrong. Check your installation of mySQL and the info you provided in login.php. For developers, here's what happened: " . mysql_error());
 
 //start HTML headers
