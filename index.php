@@ -8,7 +8,7 @@ require_once 'styles.php';
 //start HTML headers
 echo '<html>';
 echo '<header>';
-///echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
+echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
 //add any header information you need such as Google Analytics tracking
 echo '</header>';
 
@@ -35,13 +35,13 @@ else
 }
 
 //start posts
-/*$postdata = simple_xml_loadfile('/posts/index.xml');
-$numposts = count($postdata);
-$startindex = $numposts - 1;
+$postdata = simple_xml_loadfile('/posts/index.xml');
+//$numposts = count($postdata);
+//$startindex = $numposts - 1;
 $rows = $cf_hp_visposts;
 echo '<h3>' . $postdata->post[0]->title . '</h3>';
 echo '<h5>' . $postdata->post[0]->data . '</h5>';
-echo '<p>' . readfile($postdata->post[0]->content) . '</p><br />';*/
+echo '<p>' . readfile($postdata->post[0]->content) . '</p><br />';
 
 //begin footer of visible page
 echo '<hr />';
