@@ -35,7 +35,7 @@ echo '<hr />';
 echo '<br /><br />';
 //start admin content
 echo "<table border=\"1\" style=\"width:100%\">";
-$dir = $cf_rooturl . "/admin/modules/";
+$dir = "admin/modules/";
 $dh  = opendir($dir);
 while (false !== ($filename = readdir($dh)))
 {
