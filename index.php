@@ -36,12 +36,15 @@ else
 
 //start posts
 $postdata = simplexml_load_file('posts/index.xml');
-//$numposts = count($postdata);
-//$startindex = $numposts - 1;
-//$rows = $cf_hp_visposts;
-echo '<h3>' . $postdata->post[0]->title . '</h3>';
-echo '<h5>' . $postdata->post[0]->data . '</h5>';
-echo '<p>' . readfile('posts/' . $postdata->post[0]->content) . '</p><br />';
+$numposts = count($postdata->post);
+$startindex = $numposts - 1;
+$rows = $cf_hp_visposts;
+for ($i = $startindex; $i >= 0; $i--)
+{
+  echo '<h3>' . $postdata->post[$i]->title . '</h3>';
+  echo '<h5>' . $postdata->post[$i]->data . '</h5>';
+  echo '<p>' . readfile('posts/' . $postdata->post[$i]->content) . '</p><br />';
+}
 
 //begin footer of visible page
 echo '<hr />';
