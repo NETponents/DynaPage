@@ -43,7 +43,9 @@ for ($i = $startindex; $i >= 0; $i--)
 {
   echo '<h3>' . $postdata->post[$i]->title . '</h3>';
   echo '<h5>' . $postdata->post[$i]->data . '</h5>';
-  echo '<p>' . readfile('posts/' . $postdata->post[$i]->content) . '</p><br />';
+  $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
+  echo '<p>' . fread($fh, filesize('posts/' . $postdata->post[$i]->content)) . '</p><br />';
+  fclose($fh);
 }
 
 //begin footer of visible page
