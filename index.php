@@ -35,21 +35,13 @@ else
 }
 
 //start posts
-
-/*$rows = $cf_hp_visposts;
-for ($j = $rows ; $j > -1 ; --$j)
-{
-  try
-  {
-    echo '<h3>' . mysql_result($result,$j,'title') . '</h3>';
-    echo '<h5>' . mysql_result($result,$j,'pubdate') . '</h5>';
-    echo '<p>' . mysql_result($result,$j,'content') . '</p><br />';
-  }
-  catch
-  {
-    echo 'error';
-  }
-}*/
+$postdata = simple_xml_loadfile('/posts/index.xml');
+$numposts = count($postdata);
+$startindex = $numposts - 1;
+$rows = $cf_hp_visposts;
+echo '<h3>' . $postdata->post[0]->title . '</h3>';
+echo '<h5>' . $postdata->post[0]->data . '</h5>';
+echo '<p>' . readfile($postdata->post[0]->content) . '</p><br />';
 
 //begin footer of visible page
 echo '<hr />';
