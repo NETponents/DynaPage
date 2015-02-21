@@ -1,8 +1,8 @@
 <?php
-require 'cklogin.php';
+//require 'cklogin.php';
 require 'styles.php';
 require 'settings.php';
-require 'sqldata.php';
+//require 'sqldata.php';
 
 //Blocked out for dev purposes. Uncomment when login branch is merged
 //if(isloggedin() != 0)
