@@ -1,18 +1,9 @@
 <?php
 //required files
-require_once 'sqldata.php';
+//require_once 'sqldata.php';
 require_once 'settings.php';
 require_once 'styles.php';
 
-//setup mySQL connection
-
-//Use this line if you are using SQL on your own server
-//$db_server = mysql_connect($db_hostname, $db_username, $db_password);
-
-//Use this line if you are on Windows Azure or using Microsoft SQL
-$db_server = sqlsrv_connect($db_hostname, array("UID"=>$db_username, "PWD"=>$db_password, "Database"=>$db_database));
-
-if(!$db_server) die("Something went wrong. Check your installation of mySQL and the info you provided in sqldata.php. For developers, here's what happened: " . mysql_error());
 
 //start HTML headers
 echo '<html>';
@@ -44,22 +35,8 @@ else
 }
 
 //start posts
-//initialize connection
 
-//Uncomment this line if you are not using MS SQL
-//mysql_select_db($db_database) or die("Something went wrong. Check that you set up your database correctly and you provided the correct name in login.php. For the developers: " . mysql.error());
-
-//Use this line if you ARE on a varient of MS SQL
-$db_server = connect(); 
-$sql = "SELECT * FROM posts LIMIT " . $cf_hp_visposts; 
-$stmt = $db_server->query($sql); 
-$result = $stmt->fetchAll(PDO::FETCH_NUM); 
-
-//$query = "SELECT * FROM posts LIMIT " . $cf_hp_visposts;
-//$result = mysql_query($query);
-if (!$result) die("No posts found.");
-//$rows = mysql_num_rows($result);
-$rows = $cf_hp_visposts;
+/*$rows = $cf_hp_visposts;
 for ($j = $rows ; $j > -1 ; --$j)
 {
   try
@@ -72,7 +49,7 @@ for ($j = $rows ; $j > -1 ; --$j)
   {
     echo 'error';
   }
-}
+}*/
 
 //begin footer of visible page
 echo '<hr />';
