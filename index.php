@@ -41,7 +41,7 @@ $postdata = simple_xml_loadfile('/posts/index.xml');
 $rows = $cf_hp_visposts;
 echo '<h3>' . $postdata->post[0]->title . '</h3>';
 echo '<h5>' . $postdata->post[0]->data . '</h5>';
-echo '<p>' . readfile($postdata->post[0]->content) . '</p><br />';
+//echo '<p>' . readfile($postdata->post[0]->content) . '</p><br />';
 
 //begin footer of visible page
 echo '<hr />';
