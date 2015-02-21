@@ -35,7 +35,7 @@ else
 }
 
 //start posts
-$postdata = simple_xml_loadfile('posts/index.xml');
+$postdata = simplexml_load_file('posts/index.xml');
 //$numposts = count($postdata);
 //$startindex = $numposts - 1;
 //$rows = $cf_hp_visposts;
