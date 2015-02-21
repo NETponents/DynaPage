@@ -1,0 +1,8 @@
+<person>
+  <data>
+    <name>Admin</name>
+    <bio>
+      Admin is the default user. He should not be used for normal day-to-day use. He is the owner of the site.
+    </bio>
+  </data>
+</person>
