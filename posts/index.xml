@@ -1,9 +1,14 @@
-<y:2001>
-  <m:1>
-    <d:31>
-      <p:a>
-        /1.txt
-      </a>
-    </31>
-  </1>
-</2001>
+<posts>
+  <post>
+    <title>First Post</title>
+    <content>a.txt</content>
+    <data>a.xml</data>
+    <tag>a</tag>
+  </post>
+  <post>
+    <title>Second Post</title>
+    <content>b.txt</content>
+    <data>b.xml</data>
+    <tag>b</tag>
+  </post>
+</posts>
