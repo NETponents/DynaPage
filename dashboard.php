@@ -1,41 +1,8 @@
 <?php
-//require 'cklogin.php';
-require 'styles.php';
-require 'settings.php';
-//require 'sqldata.php';
-
-//Blocked out for dev purposes. Uncomment when login branch is merged
-//if(isloggedin() != 0)
-//{
-//  echo "<html><body>FORBIDDEN</body></html>";
-//}
-//else if(accessLevel() < $sc_adminPanel)
-//{
-//  echo "<html><body>FORBIDDEN</body></html>";
-//}
-//else
-//{
-//start loading page
-echo "<html><head>";
-echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
-//This is the place to add google analytics code
-//echo
-echo "</header><body>";
-if(!$st_bodyimage)
-{
-  echo '<body>';
-}
-else
-{
-  echo '<body style=\"background-image:url(' . $st_bodyimage . ')\">';
-}
-echo "<h1>" . $cf_title . "</h1>";
-echo "<h2>" . $cf_caption . "</h2>";
-echo '<hr />';
-echo '<br /><br />';
+require_once 'header.php';
 //start admin content
 echo "<table border=\"1\" style=\"width:100%\">";
-$dir = $cf_rooturl . "/admin/modules/";
+$dir = "admin/modules/";
 $dh  = opendir($dir);
 while (false !== ($filename = readdir($dh)))
 {

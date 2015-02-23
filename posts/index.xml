@@ -1,14 +1,14 @@
 <posts>
   <post>
     <title>First Post</title>
-    <content>a.txt</content>
-    <data>a.xml</data>
-    <tag>a</tag>
+    <content>1.txt</content>
+    <data>1.xml</data>
+    <tag>1</tag>
   </post>
   <post>
     <title>Second Post</title>
-    <content>b.txt</content>
-    <data>b.xml</data>
-    <tag>b</tag>
+    <content>2.txt</content>
+    <data>2.xml</data>
+    <tag>2</tag>
   </post>
 </posts>
