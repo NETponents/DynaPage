@@ -17,6 +17,7 @@ if($numposts > $rows)
     fclose($fh);
   }
 }
+
 else
 {
   for ($i = 0; $i < $numposts; $i++)
