@@ -5,7 +5,7 @@ require_once 'header.php';
 <form action="process.php" method="post">
   Title: <input type="text" name="title"><br>
   Content: <input type="text" name="content"><br>
-  <input type="submit">
+  <input type="submit" text="Post">
 </form>
 <?php
 //begin footer of visible page
