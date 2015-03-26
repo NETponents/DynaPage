@@ -9,6 +9,7 @@ require_once 'styles.php';
 echo '<html>';
 echo '<header>';
 echo '<LINK href=\"' . $st_home . '\" rel="stylesheet" type="text/css">';
+echo '<title>' . $cf_title . '- Built with DynaPage</title>';
 //add any header information you need such as Google Analytics tracking
 echo '</header>';
 
