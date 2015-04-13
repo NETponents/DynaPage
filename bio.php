@@ -6,6 +6,6 @@ $author = simplexml_load_file('persons/' . $_GET['u'] . '.xml');
 echo $author->data[0]->name;
 echo '<hr>';
 echo $author->data[0]->bio;
+require_once 'footer.php';
 ?>
-</body>
 </html>

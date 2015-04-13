@@ -24,9 +24,5 @@ while (false !== ($filename = readdir($dh)))
 }
 echo "</table>";
 //end admin content
-echo '<hr />';
-echo $cf_legal . '<br />';
-echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>';
-echo "</body></html>";
-//}
+require_once 'footer.php';
 ?>
