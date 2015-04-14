@@ -7,4 +7,7 @@ $cf_rooturl = '/home/a7180684/public_html'; //root url, see PHP and web server s
 
 //Security
 $sc_adminpanel = 1; //Maximum access level to the site dashboard
+
+//Updates
+$up_track = 'release';
 ?>
