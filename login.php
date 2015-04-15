@@ -5,3 +5,6 @@ require_once 'header.php';
 <form action='' method='POST'>
 
 </form>
+<?php
+require_once 'footer.php';
+?>
