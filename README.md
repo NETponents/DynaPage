@@ -1,6 +1,3 @@
 DynaPage
 ========
-
-Simple blogging platform to get school clubs and small buisnesses up and running with their website.
-
-The goal of this project is to supply a simple package that can be downloaded to a server, run a script file, and the site is ready to go. Beyond that, modifications will be simple through an easy to use web interface, along with a simple scripting language for more advanced users. The internals of the software will also be availible when buisnesses or clubs wish to have total control over their website.
+Need a website for your club or group? Can't find/afford a programmer? DynaPage is your solution. Dynapage is a template and engine for creating your own amazing website with zero programming or technical knoledge.
