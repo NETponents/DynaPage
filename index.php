@@ -1,5 +1,5 @@
 <?php
-require_once 'header.php';
+require_once 'design/header.php';
 
 //start posts
 $postdata = simplexml_load_file('posts/index.xml');
