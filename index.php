@@ -29,5 +29,5 @@ else
     fclose($fh);
   }
 }
-require_once 'footer.php';
+require_once 'design/footer.php';
 ?>
