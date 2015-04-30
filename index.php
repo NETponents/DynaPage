@@ -29,5 +29,6 @@ else
     fclose($fh);
   }
 }
+//Design stuff
 require_once 'design/footer.php';
 ?>
