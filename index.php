@@ -1,13 +1,18 @@
 <?php
+//Header design file with page name and CSS stuff
 require_once 'design/header.php';
 
-//start posts
+//Variable initialization
+//Import posts data file
 $postdata = simplexml_load_file('posts/index.xml');
+//Number of posts created
 $numposts = count($postdata->post);
-$maxindex = $numposts - 1;
+//Number of rows allowed
 $rows = $cf_hp_visposts;
+//If the number of posts is greater than the allowed number of rows
 if($numposts > $rows)
 {
+  //For each row allowed to create (as defined by settings)
   for ($i = 0; $i <= $rows; $i++)
   {
     echo '<h3>' . $postdata->post[$i]->title . '</h3>';
@@ -17,7 +22,7 @@ if($numposts > $rows)
     fclose($fh);
   }
 }
-
+//Else if the number of posts is less than the allowed number of posts
 else
 {
   for ($i = 0; $i < $numposts; $i++)
@@ -29,6 +34,6 @@ else
     fclose($fh);
   }
 }
-//Design stuff
+//Footer design file
 require_once 'design/footer.php';
 ?>
