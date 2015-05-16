@@ -1,7 +1,7 @@
 <?php
 //required files
 //require_once 'sqldata.php';
-require_once 'settings.php';
+require_once '/admin/settings.php';
 require_once 'styles.php';
 
 
