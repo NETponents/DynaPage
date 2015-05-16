@@ -1,7 +1,7 @@
 <?php
 //Header design file with page name and CSS stuff
 define( 'SCRIPT_ROOT', 'http://localhost/DynaPage' );
-require_once 'design/header.php';
+require_once './design/header.php';
 
 //Variable initialization
 //Import posts data file
