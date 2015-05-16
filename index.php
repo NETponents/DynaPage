@@ -5,7 +5,7 @@ require_once './design/header.php';
 
 //Variable initialization
 //Import posts data file
-$postdata = simplexml_load_file('posts/index.xml');
+$postdata = simplexml_load_file('./posts/index.xml');
 //Number of posts created
 $numposts = count($postdata->post);
 //Number of rows allowed
@@ -19,7 +19,7 @@ if($numposts > $rows)
     echo '<h3>' . $postdata->post[$i]->title . '</h3>';
     echo '<h5>' . $postdata->post[$i]->data . '</h5>';
     $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
-    echo '<p>' . fread($fh, filesize('posts/' . $postdata->post[$i]->content)) . '</p><br />';
+    echo '<p>' . fread($fh, filesize('./posts/' . $postdata->post[$i]->content)) . '</p><br />';
     fclose($fh);
   }
 }
@@ -30,11 +30,11 @@ else
   {
     echo '<h3>' . $postdata->post[$i]->title . '</h3>';
     echo '<h5>' . $postdata->post[$i]->data . '</h5>';
-    $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
+    $fh = fopen('./posts/' . $postdata->post[$i]->content, 'r');
     echo '<p>' . fread($fh, filesize('posts/' . $postdata->post[$i]->content)) . '</p><br />';
     fclose($fh);
   }
 }
 //Footer design file
-require_once 'design/footer.php';
+require_once './design/footer.php';
 ?>
