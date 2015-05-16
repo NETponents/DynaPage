@@ -1,8 +1,9 @@
 <?php
 //required files
 //require_once 'sqldata.php';
-require_once SCRIPT_ROOT . '/admin/settings.php';
-require_once 'styles.php';
+//require_once SCRIPT_ROOT . '/admin/settings.php';
+require_once './admin/settings.php'
+require_once './styles.php';
 
 
 //start HTML headers
