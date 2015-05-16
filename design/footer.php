@@ -1,13 +1,13 @@
 //begin footer of visible page 
 //require_once './admin/settings.php';
-echo '<hr />'; 
+//echo '<hr />'; 
 //echo $cf_legal . '<br />'; 
-echo 'Developed with <a href=\'github.com/ARMmaster17/DynaPage/\'>DynaPage</a>'; 
+//echo 'Developed with <a href=\'github.com/ARMmaster17/DynaPage/\'>DynaPage</a>'; 
 
 //end body 
-echo '</body>'; 
+//echo '</body>'; 
 
 //open footer 
-echo '<footer>'; 
+//echo '<footer>'; 
 //add footer here. Ex: advanced page load timing JS snippet 
-echo '</footer>';
+//echo '</footer>';
