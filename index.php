@@ -19,7 +19,7 @@ if($numposts > $rows)
     echo '<div class=\"row\">';
     echo '<div class=\"col-sm-2\">';
     echo '<h1>' . $postdata->post[$i]->title . '</h1>';
-    echo '<p>' . $postdata->post[$i]->data . '</p>';
+    //echo '<p>' . $postdata->post[$i]->data . '</p>';
     echo '</div><div class=\"col-sm-10\">';
     $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
     echo '<p>' . fread($fh, filesize('./posts/' . $postdata->post[$i]->content)) . '</p><br />';
@@ -36,7 +36,7 @@ else
     echo '<div class=\"row\">';
     echo '<div class=\"col-sm-2\">';
     echo '<h1>' . $postdata->post[$i]->title . '</h1>';
-    echo '<p>' . $postdata->post[$i]->data . '</p>';
+    //echo '<p>' . $postdata->post[$i]->data . '</p>';
     echo '</div><div class=\"col-sm-10\">';
     $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
     echo '<p>' . fread($fh, filesize('./posts/' . $postdata->post[$i]->content)) . '</p><br />';
