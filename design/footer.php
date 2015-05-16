@@ -1,4 +1,5 @@
 //begin footer of visible page 
+require_once './admin/settings.php';
 echo '<hr />'; 
 echo $cf_legal . '<br />'; 
 echo 'Developed with <a href=\"github.com/ARMmaster17/DynaPage/\">DynaPage</a>'; 
