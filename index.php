@@ -17,10 +17,10 @@ if($numposts > $rows)
   for ($i = 0; $i <= $rows; $i++)
   {
     echo '<div class="row">';
-    echo '<div class="col-sm-2">';
+    echo '<div class="col-sm-3">';
     echo '<h1>' . $postdata->post[$i]->title . '</h1>';
     //echo '<p>' . $postdata->post[$i]->data . '</p>';
-    echo '</div><div class="col-sm-10">';
+    echo '</div><div class="col-sm-9">';
     $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
     echo '<p>' . fread($fh, filesize('./posts/' . $postdata->post[$i]->content)) . '</p><br />';
     fclose($fh);
@@ -34,10 +34,10 @@ else
   for ($i = 0; $i < $numposts; $i++)
   {
     echo '<div class="row">';
-    echo '<div class="col-sm-2">';
+    echo '<div class="col-sm-3">';
     echo '<h1>' . $postdata->post[$i]->title . '</h1>';
     //echo '<p>' . $postdata->post[$i]->data . '</p>';
-    echo '</div><div class="col-sm-10">';
+    echo '</div><div class="col-sm-9">';
     $fh = fopen('posts/' . $postdata->post[$i]->content, 'r');
     echo '<p>' . fread($fh, filesize('./posts/' . $postdata->post[$i]->content)) . '</p><br />';
     fclose($fh);
