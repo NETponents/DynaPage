@@ -1,0 +1,7 @@
+*.log
+*.temp
+temp/
+tools/
+posts/*.txt
+posts/*.xml
+persons/*.xml
