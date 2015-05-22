@@ -10,3 +10,6 @@ DynaPage allows you to create your website from within your browser, not an HTML
 2. Copy the files to your server directory.
 3. Visit http://your.url.com/first
 4. Follow the instructions to set up your website.
+
+# What if I run into problems?
+Take a look at our [wiki](https://github.com/NETponents/DynaPage/wiki). First see if your problem is under the *Known Issues* tab. If not, look at the *Troubleshooting* page. If you still have problems, file an issue [on our GitHub page](https://github.com/NETponents/DynaPage/issues) and our developer(s) will get to work right away! Please do not email or message us about bugs. Unless it is offically documented on the issues page, we cannot recognize it as a valid issue.
