@@ -14,10 +14,10 @@
     <h1>DynaPage Setup</h1>
     <p>Follow the instructions below to finish setting up DynaPage!</p>
     <div class="progress">
-      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-        20% Complete (2/5)
-      </div>
-    </div>
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    50% Complete (2/4)
+  </div>
+</div>
   </div>
   <div class="row">
     <div class="col-sm-6">
