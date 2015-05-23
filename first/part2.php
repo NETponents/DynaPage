@@ -35,6 +35,7 @@
     <div class="col-sm-6">
       <h3>Did it work?</h3>
       <p>Since your browser showed this page, you do have PHP installed. If you don't see the text "It works!!!", then you may need to update or enable your version of PHP.</p>
+      <p>If the JavaScript test failed, this could be a variety of problems. First, make sure you are using a web browser capable of running JS scripts. We reccommend Google Chrome. If you still encounter problems, make sure there is no security setting or .htaccess file that prohibits transferring JS files on the server.</p>
     </div>
   </div>
   <div class="row">
