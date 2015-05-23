@@ -26,7 +26,7 @@
       echo '<div class="well">Test passed</div>';
       ?>
       <h3>JavaScript test</h3>
-      <p>This tests your servers CDN ability, and if your browser is capable of completing the next step.</p>
+      <p>This tests your servers CDN ability and if your browser is capable of completing the next step.</p>
       <div class="well" id="jstest">Test failed</div>
       <script>
         document.getElementById("jstest").innerHTML = "Test passed";
