@@ -16,6 +16,7 @@ if($numposts > $rows)
   //For each row allowed to create (as defined by settings)
   for ($i = 0; $i <= $rows; $i++)
   {
+    //Create a new row for the post
     echo '<div class="row">';
     echo '<div class="col-sm-3">';
     echo '<h1>' . $postdata->post[$i]->title . '</h1>';
