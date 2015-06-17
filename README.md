@@ -1,5 +1,7 @@
 DynaPage
 ===
+
+[![Join the chat at https://gitter.im/NETponents/DynaPage](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/NETponents/DynaPage?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 DynaPage is a modify-able website toolkit that allows you to create your own dynamic website with **ZERO** technical knowledge. No need to wrangle with Apache modules and SQL databases. Just copy, paste, and start creating your website.
 
 # Why DynaPage?
