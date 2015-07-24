@@ -11,7 +11,7 @@ DynaPage
 [![Issue Stats](http://issuestats.com/github/NETponents/DynaPage/badge/pr?style=flat)](http://issuestats.com/github/NETponents/DynaPage)
 [![Issue Stats](http://issuestats.com/github/NETponents/DynaPage/badge/issue?style=flat)](http://issuestats.com/github/NETponents/DynaPage)
 [![Gratipay](https://img.shields.io/gratipay/ARMmaster17.svg)](http://gratipay.com/~ARMmaster17)
-=====
+
 DynaPage is a modify-able website toolkit that allows you to create your own dynamic website with **ZERO** technical knowledge. No need to wrangle with Apache modules and SQL databases. Just copy, paste, and start creating your website.
 
 # Why DynaPage?
