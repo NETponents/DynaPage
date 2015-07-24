@@ -2,6 +2,16 @@ DynaPage
 ===
 
 [![Join the chat at https://gitter.im/NETponents/DynaPage](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/NETponents/DynaPage?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub license](https://img.shields.io/github/license/NETponents/DynaPage.svg)](https://github.com/NETponents/DynaPage)
+[![GitHub forks](https://img.shields.io/github/forks/NETponents/DynaPage.svg)](https://github.com/NETponents/DynaPage)
+[![GitHub stars](https://img.shields.io/github/stars/NETponents/DynaPage.svg)](https://github.com/NETponents/DynaPage)
+[![GitHub release](https://img.shields.io/github/release/NETponents/DynaPage.svg)](https://github.com/NETponents/DynaPage)
+[![Github Releases](https://img.shields.io/github/downloads/NETponents/DynaPage/latest/total.svg)](https://github.com/NETponents/DynaPage/releases)
+[![GitHub issues](https://img.shields.io/github/issues/NETponents/DynaPage.svg)](https://github.com/NETponents/DynaPage)
+[![Issue Stats](http://issuestats.com/github/NETponents/DynaPage/badge/pr?style=flat)](http://issuestats.com/github/NETponents/DynaPage)
+[![Issue Stats](http://issuestats.com/github/NETponents/DynaPage/badge/issue?style=flat)](http://issuestats.com/github/NETponents/DynaPage)
+[![Gratipay](https://img.shields.io/gratipay/ARMmaster17.svg)](http://gratipay.com/~ARMmaster17)
+=====
 DynaPage is a modify-able website toolkit that allows you to create your own dynamic website with **ZERO** technical knowledge. No need to wrangle with Apache modules and SQL databases. Just copy, paste, and start creating your website.
 
 # Why DynaPage?
